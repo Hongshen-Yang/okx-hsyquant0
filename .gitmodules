@@ -1,0 +1,9 @@
+[submodule "submodules"]
+	path = submodules
+	url = https://github.com/okxapi/python-okx.git
+[submodule "binance-public-data"]
+	path = binance-public-data
+	url = https://github.com/binance/binance-public-data.git
+[submodule "python-okx"]
+	path = python-okx
+	url = https://github.com/okxapi/python-okx.git
