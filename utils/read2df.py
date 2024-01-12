@@ -59,7 +59,7 @@ def read2df(symbols, freqs, marketType="spot"):
         numeric_columns = df.columns.difference(['datetime', 'tic', 'itvl'])
         df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric, errors='coerce')
 
-        df = df.sort_values(['time', 'tic', 'itvl'],ignore_index=True)
+        df = df.sort_values(['time', 'tic', 'itvl'], ignore_index=True)
         df = df.drop_duplicates()
         
         dfs.append(df)
